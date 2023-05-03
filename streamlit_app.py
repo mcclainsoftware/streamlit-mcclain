@@ -3,12 +3,13 @@ import altair as alt
 import math
 import pandas as pd
 import streamlit as st
+import os
 
 if 'response' not in st.session_state:
     st.session_state.response = ''
 
 def send_click():
-    st.session_state.response  = 'TODO: Wire up Index with '+ st.session_state.prompt
+    st.session_state.response  = 'TODO: Wire up Index with '+ st.session_state.prompt + os.environ["OPEN_API_KEY"]
 
 """
 # TMA Question Asker

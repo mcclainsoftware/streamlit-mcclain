@@ -16,10 +16,9 @@ def send_click():
 Learning how to do Python and LlamaIndex AKA GPT Index
 """
 st.text_input("Ask something: ", key='prompt')
-    st.button("Send", on_click=send_click)
-    if st.session_state.response:
-        st.subheader("Response: ")
-        st.success(st.session_state.response, icon= "🤖")
+st.button("Send", on_click=send_click)
+st.subheader("Response: ")
+st.success(st.session_state.response, icon= "🤖")
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)

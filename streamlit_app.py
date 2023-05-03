@@ -1,4 +1,4 @@
-!pip install llama_index
+
 from collections import namedtuple
 import altair as alt
 import math

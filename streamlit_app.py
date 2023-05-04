@@ -3,11 +3,6 @@
 import streamlit as st
 import os
 from llama_index import GPTVectorStoreIndex
-from llama_index import download_loader
-from llama_index.node_parser import SimpleNodeParser
-from llama_index import GPTSimpleVectorIndex
-from llama_index import LLMPredictor, GPTSimpleVectorIndex, PromptHelper, ServiceContext
-from langchain import OpenAI
 index = None
 try:
     index = GPTVectorStoreIndex.load_from_disk('./vector/vector.json')

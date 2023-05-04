@@ -7,7 +7,7 @@ index = None
 try:
     index = GPTVectorStoreIndex.load_from_disk('./vector/vector.json')
 except Exception as exc:
-    st.error("Error: ",exc)
+    st.error("Error: ")
 
 if 'response' not in st.session_state:
     st.session_state.response = ''
